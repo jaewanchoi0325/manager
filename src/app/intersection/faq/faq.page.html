@@ -1,0 +1,71 @@
+<ion-header>
+  <header class="tutorial">
+    <h1 class="title">
+      FAQ
+    </h1>
+  </header>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col offset="0.15">
+              번호
+            </ion-col>
+            <ion-col size="8">
+              제목
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col offset="0.5">
+              3
+            </ion-col>
+            <ion-col size="8">
+              회원가입을 어떻게 하나요?
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col offset="0.5">
+              2
+            </ion-col>
+            <ion-col size="8">
+              어플리케이션이 작동을 하지 않습니다.
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-label (click)="gotoFaqdetail()">
+        <ion-grid>
+          <ion-row>
+            <ion-col offset="0.5">
+              1
+            </ion-col>
+            <ion-col size="8">
+              관리비 결제가 되지 않습니다.
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

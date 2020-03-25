@@ -1,0 +1,67 @@
+<ion-header>
+  <header class="header">
+    <h1 class="title">
+      연장 및 퇴거 알림
+    </h1>
+  </header>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-title class="date">
+      0000년 00월 00일
+    </ion-card-title>
+    <ion-card-title class="contract">
+      계약연장 : 00건
+    </ion-card-title>
+    <ion-card-title class="move">
+      퇴거요청 : 00건
+    </ion-card-title>
+  </ion-card>
+
+  <ion-item lines="inset">
+    <ion-col offset="0.5">
+      날짜
+    </ion-col>
+    <ion-col size="8">
+      제목
+    </ion-col>
+  </ion-item>
+
+  <ion-item lines="inset">
+    <ion-col offset="0.15">
+      00월 00일
+    </ion-col>
+    <ion-col size="8">
+      계약 연장 신청
+    </ion-col>
+  </ion-item>
+
+  <ion-item lines="inset">
+    <ion-col offset="0.15">
+      00월 00일
+    </ion-col>
+    <ion-col size="8">
+      퇴거 요청
+    </ion-col>
+  </ion-item>
+
+  <ion-button
+    class="button"
+    color="primary"
+    size="large"
+    expand="block"
+    (click)="gotoControlExtend()"
+  >
+    계약연장 보기
+  </ion-button>
+  <ion-button
+    class="button"
+    color="primary"
+    size="large"
+    expand="block"
+    (click)="gotoControlRemoval()"
+  >
+    퇴거요청 보기
+  </ion-button>
+</ion-content>

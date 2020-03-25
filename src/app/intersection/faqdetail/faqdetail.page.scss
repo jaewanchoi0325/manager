@@ -1,0 +1,17 @@
+.tutorial {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.date,
+.name,
+.detail {
+  display: flex;
+  justify-content: center;
+}
+
+.date,
+.name {
+  font-size: 20px;
+}

@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.date,
+.contract,
+.move {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.button {
+  margin-top: 5px;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <header class="header">
+    <h2 class="title">
+      로그인-임차인
+    </h2>
+  </header>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="id">
+      <ion-label color="primary" position="floating">ID</ion-label>
+      <ion-input [(ngModel)]="id"></ion-input>
+    </ion-item>
+    <ion-item class="password">
+      <ion-label color="primary" position="floating">Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button
+    expand="block"
+    color="secondary"
+    size="large"
+    (click)="gotoMain2()"
+  >
+    로그인
+  </ion-button>
+  <ion-button
+    expand="block"
+    color="secondary"
+    size="large"
+    (click)="gotoSignUp2()"
+  >
+    회원가입
+  </ion-button>
+</ion-content>

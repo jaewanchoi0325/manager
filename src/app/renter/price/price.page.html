@@ -1,0 +1,55 @@
+<ion-header>
+  <header class="header">
+    <h1 class="title">
+      관리비 조회 및 납부
+    </h1>
+  </header>
+</ion-header>
+
+<ion-content>
+  <div class="totalPrice">
+    <ion-item lines="none">
+      00월 총 납부비용
+    </ion-item>
+    <ion-item lines="none">
+      <ion-col size="8"></ion-col>
+      <ion-col class="numbers">000,000원</ion-col>
+    </ion-item>
+  </div>
+
+  <div class="managerPrice">
+    <ion-item lines="none">
+      00월 관리비 고지서
+    </ion-item>
+    <ion-item lines="none">
+      <ion-col size="8"></ion-col>
+      <ion-col class="numbers">000,000원</ion-col>
+    </ion-item>
+  </div>
+
+  <div class="monthPrice">
+    <ion-item lines="none">
+      00월 월세 고지서
+    </ion-item>
+    <ion-item lines="none">
+      <ion-col size="8"></ion-col>
+      <ion-col class="numbers">000,000원</ion-col>
+    </ion-item>
+  </div>
+
+  <ion-button
+    class="button"
+    color="tertiary"
+    expand="block"
+    (click)="gotoPricedetail()"
+    >자세히 보기</ion-button
+  >
+
+  <ion-button
+    class="button"
+    color="tertiary"
+    expand="block"
+    (click)="gotoPricepay()"
+    >납부하기</ion-button
+  >
+</ion-content>

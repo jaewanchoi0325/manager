@@ -1,0 +1,28 @@
+<ion-header>
+  <header class="header">
+    <h1 class="title">
+      판매 등록하기
+    </h1>
+  </header>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="none">
+    <ion-label position="floating">제목을 입력해주세요</ion-label>
+    <ion-textarea rows="2"> </ion-textarea>
+  </ion-item>
+
+  <ion-item lines="inset">
+    <ion-label position="floating">내용을 입력해주세요</ion-label>
+    <ion-textarea rows="10"> </ion-textarea>
+  </ion-item>
+
+  <ion-button
+    class="button"
+    expand="block"
+    color="secondary"
+    (click)="gotoMarketsellalert()"
+  >
+    판매 등록</ion-button
+  >
+</ion-content>

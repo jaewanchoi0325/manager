@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+.owner,
+.ownerInfo,
+.renter,
+.renterInfo,
+.renterInfo1 {
+  display: flex;
+  justify-content: center;
+}
+
+.owner,
+.renter {
+  font-size: 20px;
+}
+
+.search {
+  margin-bottom: 10px;
+}

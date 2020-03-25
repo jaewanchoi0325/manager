@@ -1,0 +1,71 @@
+<ion-header>
+  <header class="tutorial">
+    <h1 class="title">
+      공지사항
+    </h1>
+  </header>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col offset="0.15">
+              날짜
+            </ion-col>
+            <ion-col size="8">
+              제목
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              2020.1.7
+            </ion-col>
+            <ion-col size="8">
+              1월 6일 오류사항 안내
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              2019.12.28
+            </ion-col>
+            <ion-col size="8">
+              12월 27일 업데이트 안내
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-label (click)="gotoNoticedetail()">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              2019.12.19
+            </ion-col>
+            <ion-col size="8">
+              어플리케이션 오픈
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
