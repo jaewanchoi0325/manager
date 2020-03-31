@@ -8,28 +8,20 @@
 
 <ion-content>
   <ion-item lines="inset">
-    <ion-label>
-      <ion-row>
-        <ion-col offset="0.5">
-          날짜
-        </ion-col>
-        <ion-col size="8">
-          제목
-        </ion-col>
-      </ion-row>
-    </ion-label>
+    <ion-col class="form1">
+      날짜
+    </ion-col>
+    <ion-col class="form2">
+      제목
+    </ion-col>
   </ion-item>
 
-  <ion-item lines="inset">
-    <ion-label (click)="gotoControlRemovalDetail()">
-      <ion-row>
-        <ion-col offset="0.15">
-          00월 00일
-        </ion-col>
-        <ion-col size="8">
-          퇴거 요청
-        </ion-col>
-      </ion-row>
-    </ion-label>
+  <ion-item lines="inset" (click)="gotoControlRemovalDetail()">
+    <ion-col class="form1">
+      00월 00일
+    </ion-col>
+    <ion-col class="form2">
+      퇴거 요청
+    </ion-col>
   </ion-item>
 </ion-content>

@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list class="loginFormBtn">
     <ion-item class="id">
       <ion-label color="primary" position="floating">ID</ion-label>
       <ion-input [(ngModel)]="id"></ion-input>
@@ -17,20 +17,23 @@
       <ion-input [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
   </ion-list>
-  <ion-button
-    expand="block"
-    color="secondary"
-    size="large"
-    (click)="gotoMain1()"
-  >
-    로그인
-  </ion-button>
-  <ion-button
-    expand="block"
-    color="secondary"
-    size="large"
-    (click)="gotoSignUp1()"
-  >
-    회원가입
-  </ion-button>
+
+  <ion-list class="registerBtn">
+    <ion-button
+      expand="block"
+      color="secondary"
+      size="large"
+      (click)="gotoMain1()"
+    >
+      로그인
+    </ion-button>
+    <ion-button
+      expand="block"
+      color="secondary"
+      size="large"
+      (click)="gotoSignUp1()"
+    >
+      회원가입
+    </ion-button>
+  </ion-list>
 </ion-content>

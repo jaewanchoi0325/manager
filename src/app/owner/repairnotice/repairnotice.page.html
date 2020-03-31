@@ -7,19 +7,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-col size="3"><h4>날짜</h4></ion-col>
-    <ion-col size="6"><h4>제목</h4></ion-col>
-    <ion-col size="3"><h4>수리유무</h4></ion-col>
-  </ion-item>
-  <ion-item (click)="gotoRepairnoticedetail()">
-    <ion-col size="3">2020년1월29일</ion-col>
-    <ion-col size="6">도배 요청</ion-col>
-    <ion-col size="3">진행중</ion-col>
-  </ion-item>
-  <ion-item>
-    <ion-col size="3">2020년1월20일</ion-col>
-    <ion-col size="6">전등 고장</ion-col>
-    <ion-col size="3">완료</ion-col>
-  </ion-item>
+  <ion-list class="mainMenu">
+    <ion-item>
+      <ion-col size="4" class="form"><h5>날짜</h5></ion-col>
+      <ion-col size="5" class="form"><h5>제목</h5></ion-col>
+      <ion-col size="3" class="form"><h5>수리유무</h5></ion-col>
+    </ion-item>
+    <ion-item (click)="gotoRepairnoticedetail()">
+      <ion-col size="4" class="form">0000년00월00일</ion-col>
+      <ion-col size="5" class="form">도배 요청</ion-col>
+      <ion-col size="3" class="form">진행중</ion-col>
+    </ion-item>
+    <ion-item>
+      <ion-col size="4" class="form">0000년00월00일</ion-col>
+      <ion-col size="5" class="form">전등 고장</ion-col>
+      <ion-col size="3" class="form">완료</ion-col>
+    </ion-item>
+  </ion-list>
 </ion-content>

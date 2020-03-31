@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <section class="information">
+  <ion-list>
     <ion-item>
       <ion-label position="floating">아이디</ion-label>
       <ion-textarea></ion-textarea>
@@ -32,15 +32,17 @@
       <ion-label position="floating">건물 등록</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
-  </section>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    size="large"
-    expand="block"
-    color="secondary"
-    (click)="gotoSignUp3Alert()"
-  >
-    회원가입</ion-button
-  >
+  <ion-list>
+    <ion-button
+      class="button"
+      size="large"
+      expand="block"
+      color="secondary"
+      (click)="gotoSignUp3Alert()"
+    >
+      회원가입</ion-button
+    >
+  </ion-list>
 </ion-content>

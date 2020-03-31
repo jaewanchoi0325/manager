@@ -7,23 +7,33 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-textarea rows="10"></ion-textarea>
-  </ion-item>
+  <ion-list class="mainMenu">
+    <ion-item lines="full">
+      <ion-col class="subtitle">
+        요청사항을 입력하세요.
+      </ion-col>
+    </ion-item>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoRenteropinionalert()"
-    >민원 작성하기</ion-button
-  >
+    <ion-item>
+      <ion-textarea rows="10"></ion-textarea>
+    </ion-item>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoRenteropinionlist()"
-    >민원 내역 및 조치 현황</ion-button
-  >
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoRenteropinionalert()"
+      >민원 작성하기</ion-button
+    >
+
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoRenteropinionlist()"
+      >민원 내역 및 조치 현황</ion-button
+    >
+  </ion-list>
 </ion-content>

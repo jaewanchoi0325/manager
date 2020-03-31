@@ -9,6 +9,12 @@
   font-weight: initial;
 }
 
+.form1,
+.form2 {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   margin: 10px;
   height: 50px;

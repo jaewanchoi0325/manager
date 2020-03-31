@@ -9,39 +9,61 @@
 <ion-content>
   <ion-searchbar class="search" showCancelButton="never"></ion-searchbar>
 
-  <ion-content fullscreen>
-    <ion-list>
-      <ion-item>
+  <ion-list class="mainMenu">
+    <ion-item>
+      <ion-col size="10">
         <ion-label (click)="gotoOwnerOpiniondetail()">
           <h2>샤워기 고장</h2>
           <h3>주소:서울시 중랑구 겸재로 bb빌라 101동 101호</h3>
           <p>2020년 00월 00일</p>
         </ion-label>
-      </ion-item>
+      </ion-col>
 
-      <ion-item>
+      <ion-col size="2" class="form">
+        접수완료
+      </ion-col>
+    </ion-item>
+
+    <ion-item>
+      <ion-col size="10">
         <ion-label>
           <h2>화장실 누수 발생</h2>
           <h3>주소:서울시 강동구 성내로 a오피스텔 101동 101호</h3>
           <p>2020년 00월 00일</p>
         </ion-label>
-      </ion-item>
+      </ion-col>
 
-      <ion-item>
+      <ion-col size="2" class="form">
+        완료
+      </ion-col>
+    </ion-item>
+
+    <ion-item>
+      <ion-col size="10">
         <ion-label>
           <h2>도배 요청</h2>
           <h3>주소:서울시 강남구 봉은사로 b오피스텔 101동 101호</h3>
           <p>2020년 00월 00일</p>
         </ion-label>
-      </ion-item>
+      </ion-col>
 
-      <ion-item>
+      <ion-col size="2" class="form">
+        완료
+      </ion-col>
+    </ion-item>
+
+    <ion-item>
+      <ion-col size="10">
         <ion-label>
           <h2>냉장고 고장</h2>
           <h3>주소:서울시 서대문구 창천로21 cc빌라 101동 101호</h3>
           <p>2020년 00월 00일</p>
         </ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+      </ion-col>
+
+      <ion-col size="2" class="form">
+        완료
+      </ion-col>
+    </ion-item>
+  </ion-list>
 </ion-content>

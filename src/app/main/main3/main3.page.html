@@ -9,40 +9,40 @@
 <ion-content>
   <ion-card class="information">
     <ion-card-header>
-      <ion-card-title class="date">날짜 관리건물현황</ion-card-title>
+      <ion-card-title class="date">0000년 00월 00일</ion-card-title>
       <ion-card-title class="situation">전체 -건 공실 -건</ion-card-title>
       <ion-card-subtitle class="opinion">민원사항 --건</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
-  <div class="mainBtn">
+  <ion-list class="mainMenu">
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoManagerbuilding()"
       >관리건물 상세내역</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoOpinion()"
       >민원내역 및 확인</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoFaq()"
       >FAQ</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoNotice()"
       >공지사항</ion-button
     >
-  </div>
+  </ion-list>
 </ion-content>

@@ -16,3 +16,15 @@
   margin-top: 5px;
   font-size: 20px;
 }
+
+.form1,
+.form2 {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  height: 70px;
+  font-size: 20px;
+  margin: 10px 10px;
+}

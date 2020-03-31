@@ -7,66 +7,70 @@
 </ion-header>
 
 <ion-content>
-  <ion-item lines="inset" class="title">
-    <ion-col>항목</ion-col>
-    <ion-col>금액</ion-col>
-  </ion-item>
+  <ion-list class="mainMenu">
+    <ion-item lines="inset" class="title">
+      <ion-col class="form1">항목</ion-col>
+      <ion-col class="form2">금액</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>일반 관리비</ion-col>
-    <ion-col>000,000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">일반 관리비</ion-col>
+      <ion-col class="form2">000,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>경비비</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">경비비</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>청소비</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">청소비</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>소독비</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">소독비</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>수선유지비</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">수선유지비</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>위탁관리수수료</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">위탁관리수수료</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>음식물처리비</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">음식물처리비</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>세대 전기료</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">세대 전기료</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col>월세</ion-col>
-    <ion-col>00.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">월세</ion-col>
+      <ion-col class="form2">00,000원</ion-col>
+    </ion-item>
 
-  <ion-item lines="inset" class="title">
-    <ion-col>총 금액</ion-col>
-    <ion-col>000.000원</ion-col>
-  </ion-item>
+    <ion-item lines="inset" class="title">
+      <ion-col class="form1">총 금액</ion-col>
+      <ion-col class="form2">0,000,000원</ion-col>
+    </ion-item>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoPricepay()"
-    >납부하기</ion-button
-  >
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoPricepay()"
+      >납부하기</ion-button
+    >
+  </ion-list>
 </ion-content>
