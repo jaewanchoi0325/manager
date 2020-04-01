@@ -7,29 +7,39 @@
 </ion-header>
 
 <ion-content>
-  <div class="info">
-    <ion-item lines="none"><h3>등록 차량</h3></ion-item>
-  </div>
+  <ion-list class="mainMenu">
+    <ion-item lines="full">
+      <ion-col class="subtitle">
+        차량을 등록해주세요.
+      </ion-col>
+    </ion-item>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoParkingregister()"
-    >차량등록</ion-button
-  >
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoParkingvisitlist()"
-    >방문예약 내역</ion-button
-  >
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoParkingvisitregister()"
-    >방문차량 등록</ion-button
-  >
+    <ion-item>
+      <ion-textarea rows="10"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoParkingregister()"
+      >차량등록</ion-button
+    >
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoParkingvisitlist()"
+      >방문예약 내역</ion-button
+    >
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoParkingvisitregister()"
+      >방문차량 등록</ion-button
+    >
+  </ion-list>
 </ion-content>

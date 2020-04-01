@@ -7,27 +7,38 @@
 </ion-header>
 
 <ion-content>
-  <ion-item lines="none">
-    <ion-label class="subtitle"> <h2>수제 양초 팝니다</h2></ion-label>
-  </ion-item>
-  <ion-item lines="inset">
-    <ion-label class="subtitle"> 게시날짜 : 0000년 00월 00일</ion-label>
-  </ion-item>
-  <ion-item lines="none">
-    각종 수제로 만든 양초를 판매하고 있습니다.
-  </ion-item>
-  <ion-item lines="none">
-    판매자 성명 : 임차인1
-  </ion-item>
-  <ion-item lines="none">
-    판매자 전화번호 : 010-1111-1111
-  </ion-item>
-  <ion-button
-    class="button"
-    expand="block"
-    color="secondary"
-    (click)="gotoMarketbuyalert()"
-  >
-    구입하기</ion-button
-  >
+  <ion-list class="mainMenu">
+    <ion-item lines="inset">
+      <ion-col class="form"> <h2>수제 양초 팝니다</h2></ion-col>
+    </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form"> 게시날짜 : 0000년 00월 00일</ion-col>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-col class="form">
+        각종 수제로 만든 양초를 판매하고 있습니다.
+      </ion-col>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-col class="form">
+        판매자 성명 : 임차인1
+      </ion-col>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-col class="form">
+        판매자 전화번호 : 010-1111-1111
+      </ion-col>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      expand="block"
+      color="secondary"
+      (click)="gotoMarketbuyalert()"
+    >
+      구입하기</ion-button
+    >
+  </ion-list>
 </ion-content>
