@@ -24,7 +24,12 @@ export class Main3Page {
   gotoNotice() {
     this.navCtrl.navigateForward("notice");
   }
+
   gotoTrashchecklist() {
     this.navCtrl.navigateForward("trashchecklist");
+  }
+
+  gotoEstimate() {
+    this.navCtrl.navigateForward("estimate");
   }
 }
