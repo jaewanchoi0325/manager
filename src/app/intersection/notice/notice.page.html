@@ -14,14 +14,14 @@
     <ion-button size="default">관리자</ion-button>
   </ion-list>
 
-  <ion-item lines="inset">
   <ion-list class="mainMenu">
-    <ion-col class="form1">
-      날짜
-    </ion-col>
-    <ion-col calss="form2">
-      제목
-    </ion-col>
+    <ion-item lines="inset">
+      <ion-col class="form1">
+        날짜
+      </ion-col>
+      <ion-col calss="form2">
+        제목
+      </ion-col>
     </ion-item>
 
     <ion-item lines="inset">
@@ -42,8 +42,8 @@
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset">
-      <ion-col class="form1" (click)="gotoNoticedetail()">
+    <ion-item lines="inset" (click)="gotoNoticedetail()">
+      <ion-col class="form1">
         0000년 00월 00일
       </ion-col>
       <ion-col class="form2">
