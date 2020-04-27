@@ -4,7 +4,7 @@ import { NavController } from "@ionic/angular";
 @Component({
   selector: "app-main3",
   templateUrl: "./main3.page.html",
-  styleUrls: ["./main3.page.scss"]
+  styleUrls: ["./main3.page.scss"],
 })
 export class Main3Page {
   constructor(public navCtrl: NavController) {}
@@ -23,5 +23,8 @@ export class Main3Page {
 
   gotoNotice() {
     this.navCtrl.navigateForward("notice");
+  }
+  gotoTrashchecklist() {
+    this.navCtrl.navigateForward("trashchecklist");
   }
 }

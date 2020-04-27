@@ -9,56 +9,56 @@
 <ion-content>
   <ion-card class="information">
     <ion-card-header>
-      <ion-card-title class="date">날짜</ion-card-title>
+      <ion-card-title class="date">0000년 00월 00일</ion-card-title>
       <ion-card-title class="rentInfo"
         >임대중인 세대수/ 총 월세비</ion-card-title
       >
-      <ion-card-subtitle class="rentCheck">월세비 납부 현황</ion-card-subtitle>
+      <ion-card-subtitle class="rentCheck">00건 중 00건 완료</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
-  <div class="mainBtn">
+  <ion-list class="mainMenu">
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoPay()"
       >입금 및 수납현황 <br />세입자 관리</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoControl()"
       >연장 및 퇴거 알림</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoOwnerOpinion()"
       >민원 확인</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoRepair()"
       >주택수리요청</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoFaq()"
-      >FAQ</ion-button
+      >질문사항</ion-button
     >
     <ion-button
-      class="button"
+      class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoNotice()"
       >공지사항</ion-button
     >
-  </div>
+  </ion-list>
 </ion-content>

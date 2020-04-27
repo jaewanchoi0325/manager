@@ -9,39 +9,41 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title class="title1">
+      <ion-card-title class="title">
         서울시 중랑구 겸재로 111-1 AA빌라 101동 101호
       </ion-card-title>
-      <ion-card-title class="title1">
+      <ion-card-title class="title">
         000,000원 / 월 25일
       </ion-card-title>
-      <ion-card-subtitle class="title1">
+      <ion-card-subtitle class="title">
         계약기간 만료까지 000일 남았습니다.
       </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoContractview()"
-    >계약서 보기</ion-button
-  >
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoContractview()"
+      >계약서 보기</ion-button
+    >
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoContractextension()"
-    >계약연장</ion-button
-  >
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoContractextension()"
+      >계약연장</ion-button
+    >
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoContractremoval()"
-    >퇴거요청</ion-button
-  >
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoContractremoval()"
+      >퇴거요청</ion-button
+    >
+  </ion-list>
 </ion-content>

@@ -7,33 +7,36 @@
 </ion-header>
 
 <ion-content>
-  <ion-item lines="full">
-    <ion-label class="subtitle">
-      <ion-row>
+  <ion-list class="mainMenu">
+    <ion-item lines="full">
+      <ion-col class="subtitle">
         요청사항을 입력하세요.
-      </ion-row>
-    </ion-label>
-  </ion-item>
+      </ion-col>
+    </ion-item>
 
-  <ion-item>
-    <ion-textarea rows="10"></ion-textarea>
-  </ion-item>
-  <ion-button
-    class="loginBtn"
-    expand="block"
-    color="secondary"
-    size="large"
-    (click)="gotoRepairalert()"
-  >
-    수리요청하기
-  </ion-button>
-  <ion-button
-    class="loginBtn"
-    expand="block"
-    color="secondary"
-    size="large"
-    (click)="gotoRepairnotice()"
-  >
-    수리내역 및 조치현황
-  </ion-button>
+    <ion-item>
+      <ion-textarea rows="10"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="main_Btn">
+    <ion-button
+      class="buttons"
+      expand="block"
+      color="secondary"
+      size="large"
+      (click)="gotoRepairalert()"
+    >
+      수리요청하기
+    </ion-button>
+    <ion-button
+      class="buttons"
+      expand="block"
+      color="secondary"
+      size="large"
+      (click)="gotoRepairnotice()"
+    >
+      수리내역 및 조치현황
+    </ion-button>
+  </ion-list>
 </ion-content>

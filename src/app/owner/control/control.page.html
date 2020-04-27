@@ -19,49 +19,53 @@
     </ion-card-title>
   </ion-card>
 
-  <ion-item lines="inset">
-    <ion-col offset="0.5">
-      날짜
-    </ion-col>
-    <ion-col size="8">
-      제목
-    </ion-col>
-  </ion-item>
+  <ion-list class="mainMenu">
+    <ion-item lines="inset">
+      <ion-col class="form1">
+        날짜
+      </ion-col>
+      <ion-col class="form2">
+        제목
+      </ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col offset="0.15">
-      00월 00일
-    </ion-col>
-    <ion-col size="8">
-      계약 연장 신청
-    </ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">
+        00월 00일
+      </ion-col>
+      <ion-col class="form2">
+        계약 연장 신청
+      </ion-col>
+    </ion-item>
 
-  <ion-item lines="inset">
-    <ion-col offset="0.15">
-      00월 00일
-    </ion-col>
-    <ion-col size="8">
-      퇴거 요청
-    </ion-col>
-  </ion-item>
+    <ion-item lines="inset">
+      <ion-col class="form1">
+        00월 00일
+      </ion-col>
+      <ion-col class="form2">
+        퇴거 요청
+      </ion-col>
+    </ion-item>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    color="primary"
-    size="large"
-    expand="block"
-    (click)="gotoControlExtend()"
-  >
-    계약연장 보기
-  </ion-button>
-  <ion-button
-    class="button"
-    color="primary"
-    size="large"
-    expand="block"
-    (click)="gotoControlRemoval()"
-  >
-    퇴거요청 보기
-  </ion-button>
+  <ion-list class="main_btn">
+    <ion-button
+      class="buttons"
+      color="primary"
+      size="large"
+      expand="block"
+      (click)="gotoControlExtend()"
+    >
+      계약연장 보기
+    </ion-button>
+    <ion-button
+      class="buttons"
+      color="primary"
+      size="large"
+      expand="block"
+      (click)="gotoControlRemoval()"
+    >
+      퇴거요청 보기
+    </ion-button>
+  </ion-list>
 </ion-content>

@@ -7,19 +7,27 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label (click)="gotoTrashdetail()">
-      <h2>대형폐기물 견적</h2>
-      <h3>0000년 00월 00일</h3>
-      <p>확인중</p>
-    </ion-label>
-  </ion-item>
+  <ion-list class="mainMenu">
+    <ion-item>
+      <ion-col size="10">
+        <ion-label (click)="gotoTrashdetail()">
+          <h2>대형폐기물 견적</h2>
+          <h3>0000년 00월 00일</h3>
+        </ion-label>
+      </ion-col>
 
-  <ion-item>
-    <ion-label>
-      <h2>대형폐기물 견적</h2>
-      <h3>0000년 00월 00일</h3>
-      <p>완료</p>
-    </ion-label>
-  </ion-item>
+      <ion-col size="2" class="form">확인중</ion-col>
+    </ion-item>
+
+    <ion-item>
+      <ion-col size="10">
+        <ion-label>
+          <h2>대형폐기물 견적</h2>
+          <h3>0000년 00월 00일</h3>
+        </ion-label>
+      </ion-col>
+
+      <ion-col size="2" class="form">완료</ion-col>
+    </ion-item>
+  </ion-list>
 </ion-content>

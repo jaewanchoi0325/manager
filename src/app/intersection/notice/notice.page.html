@@ -7,65 +7,48 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item lines="inset">
-      <ion-label>
-        <ion-grid>
-          <ion-row>
-            <ion-col offset="0.15">
-              날짜
-            </ion-col>
-            <ion-col size="8">
-              제목
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-label>
+  <ion-list class="main_Btn">
+    <ion-button size="default">전체보기</ion-button>
+    <ion-button size="default">임대인</ion-button>
+    <ion-button size="default">임차인</ion-button>
+    <ion-button size="default">관리자</ion-button>
+  </ion-list>
+
+  <ion-item lines="inset">
+  <ion-list class="mainMenu">
+    <ion-col class="form1">
+      날짜
+    </ion-col>
+    <ion-col calss="form2">
+      제목
+    </ion-col>
     </ion-item>
 
     <ion-item lines="inset">
-      <ion-label>
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              2020.1.7
-            </ion-col>
-            <ion-col size="8">
-              1월 6일 오류사항 안내
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-label>
+      <ion-col class="form1">
+        0000년 00월 00일
+      </ion-col>
+      <ion-col class="form2">
+        1월 6일 오류사항 안내
+      </ion-col>
     </ion-item>
 
     <ion-item lines="inset">
-      <ion-label>
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              2019.12.28
-            </ion-col>
-            <ion-col size="8">
-              12월 27일 업데이트 안내
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-label>
+      <ion-col class="form1">
+        0000년 00월 00일
+      </ion-col>
+      <ion-col class="form2">
+        12월 27일 업데이트 안내
+      </ion-col>
     </ion-item>
 
     <ion-item lines="inset">
-      <ion-label (click)="gotoNoticedetail()">
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              2019.12.19
-            </ion-col>
-            <ion-col size="8">
-              어플리케이션 오픈
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-label>
+      <ion-col class="form1" (click)="gotoNoticedetail()">
+        0000년 00월 00일
+      </ion-col>
+      <ion-col class="form2">
+        어플리케이션 오픈
+      </ion-col>
     </ion-item>
   </ion-list>
 </ion-content>

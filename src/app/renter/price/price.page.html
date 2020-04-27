@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <div class="totalPrice">
+  <ion-list class="totalPrice">
     <ion-item lines="none">
       00월 총 납부비용
     </ion-item>
@@ -15,9 +15,9 @@
       <ion-col size="8"></ion-col>
       <ion-col class="numbers">000,000원</ion-col>
     </ion-item>
-  </div>
+  </ion-list>
 
-  <div class="managerPrice">
+  <ion-list class="managerPrice">
     <ion-item lines="none">
       00월 관리비 고지서
     </ion-item>
@@ -25,9 +25,9 @@
       <ion-col size="8"></ion-col>
       <ion-col class="numbers">000,000원</ion-col>
     </ion-item>
-  </div>
+  </ion-list>
 
-  <div class="monthPrice">
+  <ion-list class="monthPrice">
     <ion-item lines="none">
       00월 월세 고지서
     </ion-item>
@@ -35,21 +35,34 @@
       <ion-col size="8"></ion-col>
       <ion-col class="numbers">000,000원</ion-col>
     </ion-item>
-  </div>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoPricedetail()"
-    >자세히 보기</ion-button
-  >
+  <ion-list>
+    <ion-item lines="none">
+      <ion-col size="10" class="status">
+        납부현황
+      </ion-col>
+      <ion-col size="2" class="status">
+        미납
+      </ion-col>
+    </ion-item>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    color="tertiary"
-    expand="block"
-    (click)="gotoPricepay()"
-    >납부하기</ion-button
-  >
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoPricedetail()"
+      >자세히 보기</ion-button
+    >
+
+    <ion-button
+      class="button"
+      color="tertiary"
+      expand="block"
+      (click)="gotoPricepay()"
+      >납부하기</ion-button
+    >
+  </ion-list>
 </ion-content>
