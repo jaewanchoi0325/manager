@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <section class="information">
+  <ion-list class="mainMenu">
     <ion-item>
       <ion-label position="floating">차량번호</ion-label>
       <ion-textarea></ion-textarea>
@@ -28,14 +28,16 @@
       <ion-label position="floating">연락처</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
-  </section>
+  </ion-list>
 
-  <ion-button
-    class="button"
-    expand="block"
-    color="secondary"
-    (click)="gotoParkingvisitdetailalert()"
-  >
-    차량등록</ion-button
-  ></ion-content
->
+  <ion-list class="main_Btn">
+    <ion-button
+      class="button"
+      expand="block"
+      color="secondary"
+      (click)="gotoParkingvisitdetailalert()"
+    >
+      차량등록</ion-button
+    >
+  </ion-list>
+</ion-content>
