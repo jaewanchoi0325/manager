@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>estimate</ion-title>
-  </ion-toolbar>
+  <header class="header">
+    <h1 class="title">
+      수리견적서 작성
+    </h1>
+  </header>
 </ion-header>
 
 <ion-content>
+  <ion-list class="mainMenu">
+    <ion-item lines="full">
+      <ion-col class="subtitle">
+        요청사항을 입력하세요.
+      </ion-col>
+    </ion-item>
 
+    <ion-item>
+      <ion-textarea rows="10"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="main_Btn">
+    <ion-button
+      class="buttons"
+      expand="block"
+      color="secondary"
+      size="large"
+      (click)="gotoEstimatealert()"
+    >
+      견적서 보내기
+    </ion-button>
+    <ion-button
+      class="buttons"
+      expand="block"
+      color="secondary"
+      size="large"
+      (click)="gotoEstimatelist()"
+    >
+      견적서 내역 보기
+    </ion-button>
+  </ion-list>
 </ion-content>

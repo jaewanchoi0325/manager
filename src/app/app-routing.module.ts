@@ -358,6 +358,14 @@ const routes: Routes = [
         (m) => m.TrashchecklistPageModule
       ),
   },
+  {
+    path: 'estimatelist',
+    loadChildren: () => import('./admin/estimatelist/estimatelist.module').then( m => m.EstimatelistPageModule)
+  },
+  {
+    path: 'estimatelistdetail',
+    loadChildren: () => import('./admin/estimatelistdetail/estimatelistdetail.module').then( m => m.EstimatelistdetailPageModule)
+  },
 ];
 
 @NgModule({
