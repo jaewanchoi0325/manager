@@ -17,19 +17,23 @@ export class Main3Page {
     this.navCtrl.navigateForward("opinion");
   }
 
-  gotoFaq() {
-    this.navCtrl.navigateForward("faq");
-  }
-
-  gotoNotice() {
-    this.navCtrl.navigateForward("notice");
-  }
-
   gotoTrashchecklist() {
     this.navCtrl.navigateForward("trashchecklist");
   }
 
   gotoEstimate() {
     this.navCtrl.navigateForward("estimate");
+  }
+
+  gotoChecklist() {
+    this.navCtrl.navigateForward("checklist");
+  }
+
+  gotoFaq() {
+    this.navCtrl.navigateForward("faq");
+  }
+
+  gotoNotice() {
+    this.navCtrl.navigateForward("notice");
   }
 }

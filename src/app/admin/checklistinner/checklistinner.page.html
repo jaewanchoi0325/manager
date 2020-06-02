@@ -1,0 +1,97 @@
+<ion-header>
+  <header class="tutorial">
+    <h1 class="title">
+      입주 및 퇴거 점검표 점검하기
+    </h1>
+  </header>
+</ion-header>
+<ion-content>
+  <ion-list class="main_menu">
+    <ion-item lines="none">
+      <ion-label>날짜 설정하기</ion-label>
+      <ion-datetime
+        [pickerOptions]="customPickerOptions"
+        monthValues="1,2,3,4,5,6,7,8,9,10,11,12"
+        yearValues="2018년,2019년,2020년"
+        dayValues="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31"
+        displayFormat="YYYY년 MM월 DD일"
+        placeholder="점검날짜를 선택해주세요."
+        cancelText="취소"
+        doneText="설정"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-button
+      size="large"
+      expand="block"
+      (click)="checklistinnerActionSheet()"
+    >
+      주소 설정하기
+    </ion-button>
+
+    <ion-item>
+      <ion-label position="floating">건물 상세 주소</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-list class="main_menu2">
+      <ion-list-header>
+        <ion-label>
+          건물 구조 설정
+        </ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>방 개수</ion-label>
+        <ion-select
+          placeholder="개수를 설정해주세요"
+          cancelText="취소"
+          okText="확인"
+        >
+          <ion-select-option value="roomNone">없음</ion-select-option>
+          <ion-select-option value="roomOne">1개</ion-select-option>
+          <ion-select-option value="roomTwo">2개</ion-select-option>
+          <ion-select-option value="roomThree">3개</ion-select-option>
+          <ion-select-option value="roomFour">4개</ion-select-option>
+          <ion-select-option value="roomFive">5개</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>화장실 개수</ion-label>
+        <ion-select
+          placeholder="개수를 설정해주세요"
+          cancelText="취소"
+          okText="확인"
+        >
+          <ion-select-option value="toiletOne">1개</ion-select-option>
+          <ion-select-option value="toiletTwo">2개</ion-select-option>
+          <ion-select-option value="toiletThree">3개</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>발코니 개수</ion-label>
+        <ion-select
+          placeholder="개수를 설정해주세요"
+          cancelText="취소"
+          okText="확인"
+        >
+          <ion-select-option value="balconyNone">없음</ion-select-option>
+          <ion-select-option value="balconyOne">1개</ion-select-option>
+          <ion-select-option value="balconyTwo">2개</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-button
+      size="large"
+      expand="block"
+      (click)="gotoChecklistinnercheckone()"
+    >
+      주택 점검표 작성하기
+    </ion-button>
+  </ion-list>
+</ion-content>

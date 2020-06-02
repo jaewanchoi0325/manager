@@ -21,30 +21,55 @@
 
   <ion-list class="mainMenu">
     <ion-item>
-      <ion-label (click)="gotoPayDetail()">
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 중랑구 겸재로.....</h3>
-        <p>납부일: 매월 00일 000,000원</p>
-        <p>납부상태: 완납</p>
-      </ion-label>
+      <ion-col size="10">
+        <h4>민원정보</h4>
+      </ion-col>
+
+      <ion-col size="2" class="form">
+        처리현황
+      </ion-col>
     </ion-item>
 
     <ion-item>
-      <ion-label>
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 강동구 성내로.....</h3>
-        <p>납부일: 매월 00일 000,000원</p>
-        <p>납부상태: 완납</p>
-      </ion-label>
+      <ion-col>
+        <ion-label (click)="gotoPayDetail()">
+          <h2>건물명:ㅇㅇ건물</h2>
+          <h3>주소:서울시 중랑구 겸재로.....</h3>
+          <p>납부일: 매월 00일 000,000원</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col class="form" size="2">
+        완납
+      </ion-col>
     </ion-item>
 
     <ion-item>
-      <ion-label>
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 마포구 성암로.....</h3>
-        <p>납부일: 매월 00일 000,000원</p>
-        <p>납부상태: 미납</p>
-      </ion-label>
+      <ion-col>
+        <ion-label>
+          <h2>건물명:ㅇㅇ건물</h2>
+          <h3>주소:서울시 강동구 성내로.....</h3>
+          <p>납부일: 매월 00일 000,000원</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col class="form" size="2">
+        완납
+      </ion-col>
+    </ion-item>
+
+    <ion-item>
+      <ion-col>
+        <ion-label>
+          <h2>건물명:ㅇㅇ건물</h2>
+          <h3>주소:서울시 마포구 성암로.....</h3>
+          <p>납부일: 매월 00일 000,000원</p>
+        </ion-label>
+      </ion-col>
+
+      <ion-col class="form" size="2">
+        미납
+      </ion-col>
     </ion-item>
   </ion-list>
 </ion-content>

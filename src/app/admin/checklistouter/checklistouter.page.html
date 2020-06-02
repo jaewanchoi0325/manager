@@ -1,0 +1,41 @@
+<ion-header>
+  <header class="tutorial">
+    <h1 class="title">
+      시설물 종합 점검표 작성하기
+    </h1>
+  </header>
+</ion-header>
+
+<ion-content>
+  <ion-list class="main_menu">
+    <ion-item lines="none">
+      <ion-label>날짜 설정하기</ion-label>
+      <ion-datetime
+        [pickerOptions]="customPickerOptions"
+        monthValues="1,2,3,4,5,6,7,8,9,10,11,12"
+        yearValues="2018년,2019년,2020년"
+        dayValues="1,2,3,4,5,6,7,8,9,10, 11, 12, 13, 14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31"
+        displayFormat="YYYY년 MM월 DD일"
+        placeholder="점검날짜를 선택해주세요."
+        cancelText="취소"
+        doneText="설정"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="main_Btn">
+    <ion-button
+      size="large"
+      expand="block"
+      (click)="checklistouterActionSheet()"
+    >
+      점검건물 설정하기
+    </ion-button>
+    <ion-button
+      size="large"
+      expand="block"
+      (click)="gotoChecklistoutercheckone()"
+      >내부 점검표 작성하기</ion-button
+    >
+  </ion-list>
+</ion-content>

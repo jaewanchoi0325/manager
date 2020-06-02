@@ -7,12 +7,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-searchbar class="search" showCancelButton="never"> </ion-searchbar>
-
   <ion-list class="main_Btn">
-    <ion-button size="default">전체 건물</ion-button>
-    <ion-button size="default">서울시 중랑구 겸재로 aa빌라</ion-button>
-    <ion-button size="default">서울시 중랑구 겸재로 aa빌라</ion-button>
+    <ion-button
+      expand="block"
+      size="large"
+      (click)="managerbuildingActionSheet()"
+      >건물 확인하기</ion-button
+    >
   </ion-list>
 
   <ion-list class="mainMenu">

@@ -7,51 +7,22 @@ import { ActionSheetController } from "@ionic/angular";
   styleUrls: ["./estimatelistdetail.page.scss"],
 })
 export class EstimatelistdetailPage {
-  constructor(public actionSheetController: ActionSheetController) {}
-
-  async presentActionSheet() {
-    const actionSheet = await this.actionSheetController.create({
-      header: "Albums",
+  customPickerOptions: any;
+  constructor() {
+    this.customPickerOptions = {
       buttons: [
         {
-          text: "Delete",
-          role: "destructive",
-          icon: "trash",
-          handler: () => {
-            console.log("Delete clicked");
-          },
+          text: "1111",
+          handler: () => console.log("Clicked Save!"),
         },
         {
-          text: "Share",
-          icon: "share",
+          text: "Log",
           handler: () => {
-            console.log("Share clicked");
-          },
-        },
-        {
-          text: "Play (open modal)",
-          icon: "arrow-dropright-circle",
-          handler: () => {
-            console.log("Play clicked");
-          },
-        },
-        {
-          text: "Favorite",
-          icon: "heart",
-          handler: () => {
-            console.log("Favorite clicked");
-          },
-        },
-        {
-          text: "Cancel",
-          icon: "close",
-          role: "cancel",
-          handler: () => {
-            console.log("Cancel clicked");
+            console.log("Clicked Log. Do not Dismiss.");
+            return false;
           },
         },
       ],
-    });
-    await actionSheet.present();
+    };
   }
 }

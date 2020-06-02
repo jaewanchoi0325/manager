@@ -359,12 +359,84 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'estimatelist',
-    loadChildren: () => import('./admin/estimatelist/estimatelist.module').then( m => m.EstimatelistPageModule)
+    path: "estimatelist",
+    loadChildren: () =>
+      import("./admin/estimatelist/estimatelist.module").then(
+        (m) => m.EstimatelistPageModule
+      ),
   },
   {
-    path: 'estimatelistdetail',
-    loadChildren: () => import('./admin/estimatelistdetail/estimatelistdetail.module').then( m => m.EstimatelistdetailPageModule)
+    path: "estimatelistdetail",
+    loadChildren: () =>
+      import("./admin/estimatelistdetail/estimatelistdetail.module").then(
+        (m) => m.EstimatelistdetailPageModule
+      ),
+  },
+  {
+    path: "checklist",
+    loadChildren: () =>
+      import("./admin/checklist/checklist.module").then(
+        (m) => m.ChecklistPageModule
+      ),
+  },
+  {
+    path: "checklistouter",
+    loadChildren: () =>
+      import("./admin/checklistouter/checklistouter.module").then(
+        (m) => m.ChecklistouterPageModule
+      ),
+  },
+
+  {
+    path: "checklistoutercheckone",
+    loadChildren: () =>
+      import(
+        "./admin/checklistoutercheckone/checklistoutercheckone.module"
+      ).then((m) => m.ChecklistoutercheckonePageModule),
+  },
+  {
+    path: "checklistouterchecktwo",
+    loadChildren: () =>
+      import(
+        "./admin/checklistouterchecktwo/checklistouterchecktwo.module"
+      ).then((m) => m.ChecklistouterchecktwoPageModule),
+  },
+  {
+    path: "checklistinner",
+    loadChildren: () =>
+      import("./admin/checklistinner/checklistinner.module").then(
+        (m) => m.ChecklistinnerPageModule
+      ),
+  },
+  {
+    path: "checklistinnercheckone",
+    loadChildren: () =>
+      import(
+        "./admin/checklistinnercheckone/checklistinnercheckone.module"
+      ).then((m) => m.ChecklistinnercheckonePageModule),
+  },
+  {
+    path: "checklistinnerchecktwo",
+    loadChildren: () =>
+      import(
+        "./admin/checklistinnerchecktwo/checklistinnerchecktwo.module"
+      ).then((m) => m.ChecklistinnerchecktwoPageModule),
+  },
+  {
+    path: 'checklistinnercheckthree',
+    loadChildren: () => import('./admin/checklistinnercheckthree/checklistinnercheckthree.module').then( m => m.ChecklistinnercheckthreePageModule)
+  },
+  {
+    path: 'checklistinnercheckfour',
+    loadChildren: () => import('./admin/checklistinnercheckfour/checklistinnercheckfour.module').then( m => m.ChecklistinnercheckfourPageModule)
+  },
+  {
+    path: 'checklistinnercheckfive',
+    loadChildren: () => import('./admin/checklistinnercheckfive/checklistinnercheckfive.module').then( m => m.ChecklistinnercheckfivePageModule)
+  },
+  {
+    path: 'checklistfix',
+    loadChildren: () => import('./admin/checklistfix/checklistfix.module').then( m => m.ChecklistfixPageModule)
   },
 ];
 

@@ -1,46 +1,70 @@
 <ion-header>
   <header class="header">
     <h1 class="title">
-      민원확인
+      민원내역
     </h1>
   </header>
 </ion-header>
 
 <ion-content>
-  <ion-searchbar class="search" showCancelButton="never"></ion-searchbar>
+  <ion-list class="main_Btn">
+    <ion-button expand="block" size="large" (click)="opinionActionSheet()"
+      >민원내역 확인하기</ion-button
+    >
+  </ion-list>
 
   <ion-content>
     <ion-list class="mainMenu">
       <ion-item>
-        <ion-label (click)="gotoOpiniondetail()">
-          <h2>샤워기 고장</h2>
-          <h3>주소:서울시 중랑구 겸재로 bb빌라 101동 101호</h3>
-          <p>2020년 00월 00일</p>
-        </ion-label>
+        <ion-col>
+          <ion-label (click)="gotoOpiniondetail()">
+            <h2>샤워기 고장</h2>
+            <h3>주소:서울시 중랑구 겸재로 bb빌라 101동 101호</h3>
+            <p>2020년 00월 00일</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="2" class="form">
+          접수중
+        </ion-col>
       </ion-item>
 
       <ion-item>
-        <ion-label>
-          <h2>화장실 누수 발생</h2>
-          <h3>주소:서울시 강동구 성내로 a오피스텔 101동 101호</h3>
-          <p>2020년 00월 00일</p>
-        </ion-label>
+        <ion-col>
+          <ion-label>
+            <h2>화장실 누수 발생</h2>
+            <h3>주소:서울시 강동구 성내로 a오피스텔 101동 101호</h3>
+            <p>2020년 00월 00일</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="2" class="form">
+          접수완료
+        </ion-col>
       </ion-item>
 
       <ion-item>
-        <ion-label>
-          <h2>도배 요청</h2>
-          <h3>주소:서울시 강남구 봉은사로 b오피스텔 101동 101호</h3>
-          <p>2020년 00월 00일</p>
-        </ion-label>
+        <ion-col>
+          <ion-label>
+            <h2>도배 요청</h2>
+            <h3>주소:서울시 강남구 봉은사로 b오피스텔 101동 101호</h3>
+            <p>2020년 00월 00일</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="2" class="form">
+          처리중
+        </ion-col>
       </ion-item>
 
       <ion-item>
-        <ion-label>
-          <h2>냉장고 고장</h2>
-          <h3>주소:서울시 서대문구 창천로21 cc빌라 101동 101호</h3>
-          <p>2020년 00월 00일</p>
-        </ion-label>
+        <ion-col>
+          <ion-label>
+            <h2>냉장고 고장</h2>
+            <h3>주소:서울시 서대문구 창천로21 cc빌라 101동 101호</h3>
+            <p>2020년 00월 00일</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="2" class="form">
+          처리완료
+        </ion-col>
       </ion-item>
     </ion-list>
   </ion-content>
