@@ -44,45 +44,33 @@
       </ion-list-header>
 
       <ion-item>
-        <ion-label>방 개수</ion-label>
-        <ion-select
-          placeholder="개수를 설정해주세요"
-          cancelText="취소"
-          okText="확인"
+        <ion-label>방 개수:</ion-label>
+
+        <ion-label color="primary">{{frameworkroom}}</ion-label>
+
+        <ion-button slot="end" fill="clear" (click)="showBasicPickerRoom()"
+          >개수를 설정해주세요</ion-button
         >
-          <ion-select-option value="roomNone">없음</ion-select-option>
-          <ion-select-option value="roomOne">1개</ion-select-option>
-          <ion-select-option value="roomTwo">2개</ion-select-option>
-          <ion-select-option value="roomThree">3개</ion-select-option>
-          <ion-select-option value="roomFour">4개</ion-select-option>
-          <ion-select-option value="roomFive">5개</ion-select-option>
-        </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label>화장실 개수</ion-label>
-        <ion-select
-          placeholder="개수를 설정해주세요"
-          cancelText="취소"
-          okText="확인"
+        <ion-label>화장실 개수:</ion-label>
+
+        <ion-label color="primary">{{frameworktoilet}}</ion-label>
+
+        <ion-button slot="end" fill="clear" (click)="showBasicPickerToilet()"
+          >개수를 설정해주세요</ion-button
         >
-          <ion-select-option value="toiletOne">1개</ion-select-option>
-          <ion-select-option value="toiletTwo">2개</ion-select-option>
-          <ion-select-option value="toiletThree">3개</ion-select-option>
-        </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label>발코니 개수</ion-label>
-        <ion-select
-          placeholder="개수를 설정해주세요"
-          cancelText="취소"
-          okText="확인"
+        <ion-label>발코니 개수:</ion-label>
+
+        <ion-label color="primary">{{frameworkbalcony}}</ion-label>
+
+        <ion-button slot="end" fill="clear" (click)="showBasicPickerBalcony()"
+          >개수를 설정해주세요</ion-button
         >
-          <ion-select-option value="balconyNone">없음</ion-select-option>
-          <ion-select-option value="balconyOne">1개</ion-select-option>
-          <ion-select-option value="balconyTwo">2개</ion-select-option>
-        </ion-select>
       </ion-item>
     </ion-list>
 

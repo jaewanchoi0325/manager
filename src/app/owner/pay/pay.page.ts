@@ -4,12 +4,12 @@ import { NavController } from "@ionic/angular";
 @Component({
   selector: "app-pay",
   templateUrl: "./pay.page.html",
-  styleUrls: ["./pay.page.scss"]
+  styleUrls: ["./pay.page.scss"],
 })
 export class PayPage {
   constructor(public navCtrl: NavController) {}
 
-  gotoPayDetail() {
+  gotoPaydetail() {
     this.navCtrl.navigateForward("paydetail");
   }
 }

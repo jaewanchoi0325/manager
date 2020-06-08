@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-paydetail',
-  templateUrl: './paydetail.page.html',
-  styleUrls: ['./paydetail.page.scss'],
+  selector: "app-paydetail",
+  templateUrl: "./paydetail.page.html",
+  styleUrls: ["./paydetail.page.scss"],
 })
-export class PaydetailPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class PaydetailPage {
+  constructor() {}
 }

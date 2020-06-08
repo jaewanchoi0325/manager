@@ -423,20 +423,40 @@ const routes: Routes = [
       ).then((m) => m.ChecklistinnerchecktwoPageModule),
   },
   {
-    path: 'checklistinnercheckthree',
-    loadChildren: () => import('./admin/checklistinnercheckthree/checklistinnercheckthree.module').then( m => m.ChecklistinnercheckthreePageModule)
+    path: "checklistinnercheckthree",
+    loadChildren: () =>
+      import(
+        "./admin/checklistinnercheckthree/checklistinnercheckthree.module"
+      ).then((m) => m.ChecklistinnercheckthreePageModule),
   },
   {
-    path: 'checklistinnercheckfour',
-    loadChildren: () => import('./admin/checklistinnercheckfour/checklistinnercheckfour.module').then( m => m.ChecklistinnercheckfourPageModule)
+    path: "checklistinnercheckfour",
+    loadChildren: () =>
+      import(
+        "./admin/checklistinnercheckfour/checklistinnercheckfour.module"
+      ).then((m) => m.ChecklistinnercheckfourPageModule),
   },
   {
-    path: 'checklistinnercheckfive',
-    loadChildren: () => import('./admin/checklistinnercheckfive/checklistinnercheckfive.module').then( m => m.ChecklistinnercheckfivePageModule)
+    path: "checklistinnercheckfive",
+    loadChildren: () =>
+      import(
+        "./admin/checklistinnercheckfive/checklistinnercheckfive.module"
+      ).then((m) => m.ChecklistinnercheckfivePageModule),
   },
   {
-    path: 'checklistfix',
-    loadChildren: () => import('./admin/checklistfix/checklistfix.module').then( m => m.ChecklistfixPageModule)
+    path: "checklistfix",
+    loadChildren: () =>
+      import("./admin/checklistfix/checklistfix.module").then(
+        (m) => m.ChecklistfixPageModule
+      ),
+  },
+  {
+    path: 'checklistfixa',
+    loadChildren: () => import('./admin/checklistfixa/checklistfixa.module').then( m => m.ChecklistfixaPageModule)
+  },
+  {
+    path: 'checklistfixb',
+    loadChildren: () => import('./admin/checklistfixb/checklistfixb.module').then( m => m.ChecklistfixbPageModule)
   },
 ];
 
