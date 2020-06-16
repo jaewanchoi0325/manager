@@ -1,45 +1,64 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      입금 및 수납현황 / 세입자 관리
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>
+      입금 및 수납현황<br />
+      계약정보 관리
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- 현재요일 기준 계약 및 월세비 합산, 미납여부 확인창(카드)  -->
   <ion-card class="information">
     <ion-card-header>
-      <ion-card-title class="days">0000년 00월 00일</ion-card-title>
-      <ion-card-title class="rentInfo"
-        >임대중인 세대수/ 총 월세비</ion-card-title
-      >
-      <ion-card-subtitle class="rentCheck"
-        >00세대 중 00세대 완납</ion-card-subtitle
-      >
+      <ion-card-title class="date">
+        {{todayDate}}
+      </ion-card-title>
+      <ion-card-title class="rentInfo">
+        임대중인 세대수/ 총 월세비
+      </ion-card-title>
+      <ion-card-subtitle class="rentCheck">
+        00세대 중 00세대 완납
+      </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
+  <!-- 계약정보 리스트 -->
   <ion-list class="mainMenu">
-    <ion-item>
-      <ion-col size="10">
-        <h4>민원정보</h4>
-      </ion-col>
+    <!-- 계약정보 및 처리현황 머리말 -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2.5"></ion-col>
+        <ion-col size="3.5"> 계약정보 </ion-col>
+        <ion-col size="2"></ion-col>
+        <ion-col class="form"> 처리현황 </ion-col>
+      </ion-row>
+    </ion-grid>
 
-      <ion-col size="2" class="form">
-        처리현황
-      </ion-col>
-    </ion-item>
-
-    <ion-item>
+    <!-- 계약정보 레이블 모음 -->
+    <ion-item (click)="gotoPaydetail()">
       <ion-col>
-        <ion-label (click)="gotoPaydetail()">
-          <h2>건물명:ㅇㅇ건물</h2>
-          <h3>주소:서울시 중랑구 겸재로.....</h3>
+        <ion-label>
+          주소:서울시 중랑구 겸재로 <br />
+          OO빌라 101동 101호
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3.5"> <p>계약기간:</p> </ion-col>
+              <ion-col size="4.5"> <p>0000년 00월 00일 부터</p> </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="3.5"> <p></p> </ion-col>
+              <ion-col size="4.5"> <p>0000년 00월 00일 까지</p> </ion-col>
+            </ion-row>
+          </ion-grid>
+
           <p>납부일: 매월 00일 000,000원</p>
         </ion-label>
       </ion-col>
 
-      <ion-col class="form" size="2">
+      <ion-col class="form" size="4">
         완납
       </ion-col>
     </ion-item>
@@ -47,27 +66,39 @@
     <ion-item>
       <ion-col>
         <ion-label>
-          <h2>건물명:ㅇㅇ건물</h2>
-          <h3>주소:서울시 강동구 성내로.....</h3>
+          <h3>
+            주소:인천시 연수구 청능대로 <br />
+            BB빌라 101동 101호
+          </h3>
+          <p>
+            계약기간: 0000년 00월 00일 <br />
+            ~ 0000년 00월 00일
+          </p>
           <p>납부일: 매월 00일 000,000원</p>
         </ion-label>
       </ion-col>
 
-      <ion-col class="form" size="2">
-        완납
+      <ion-col class="form" size="3">
+        미납
       </ion-col>
     </ion-item>
 
     <ion-item>
       <ion-col>
         <ion-label>
-          <h2>건물명:ㅇㅇ건물</h2>
-          <h3>주소:서울시 마포구 성암로.....</h3>
+          <h3>
+            주소:서울시 강동구 천호옛1길 <br />
+            AA빌라 101동 101호
+          </h3>
+          <p>
+            계약기간: 0000년 00월 00일 <br />
+            ~ 0000년 00월 00일
+          </p>
           <p>납부일: 매월 00일 000,000원</p>
         </ion-label>
       </ion-col>
 
-      <ion-col class="form" size="2">
+      <ion-col class="form" size="3">
         미납
       </ion-col>
     </ion-item>

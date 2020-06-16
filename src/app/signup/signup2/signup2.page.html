@@ -1,40 +1,51 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      회원정보입력-임차인
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>회원가입-임차인</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <!-- 회원가입 정보 입력 리스트 -->
+  <ion-list class="mainMenu">
+    <ion-item lines="none">
+      <ion-col class="title">회원정보를 입력해주세요</ion-col>
+    </ion-item>
+    <!-- 아이디 입력 폼 -->
     <ion-item>
       <ion-label position="floating">아이디</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
+    <!-- 비밀번호 입력 폼 -->
     <ion-item>
       <ion-label position="floating">비밀번호</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
+    <!-- 이름 입력 폼 -->
     <ion-item>
       <ion-label position="floating">성명</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
+    <!-- 이메일 입력 폼 -->
     <ion-item>
       <ion-label position="floating">이메일</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
+    <!-- 연락처 입력 폼 -->
     <ion-item>
       <ion-label position="floating">연락처</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
+    <!-- 초대코드 입력 폼 -->
     <ion-item>
-      <ion-label position="floating">초대번호 등록</ion-label>
+      <ion-label position="floating">초대코드 입력</ion-label>
       <ion-textarea></ion-textarea>
     </ion-item>
   </ion-list>
 
+  <!-- 버튼 리스트 -->
   <ion-list>
+    <!-- 회원가입 버튼 (누르면 알람 창 뜨고 난 후 로그인(login2)으로 이동) -->
     <ion-button
       class="button"
       size="large"

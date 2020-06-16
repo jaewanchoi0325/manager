@@ -1,30 +1,43 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      임대인
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>임대인</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- 현재 요일 기준 계약 및 월세비 합산, 미납여부 확인창(카드)  -->
   <ion-card class="information">
     <ion-card-header>
-      <ion-card-title class="date">0000년 00월 00일</ion-card-title>
-      <ion-card-title class="rentInfo"
-        >임대중인 세대수/ 총 월세비</ion-card-title
-      >
-      <ion-card-subtitle class="rentCheck">00건 중 00건 완료</ion-card-subtitle>
+      <!-- 현재요일 멤버변수 {{todayDate}} 코드 -->
+      <ion-card-title class="date">
+        {{todayDate}}
+      </ion-card-title>
+
+      <!-- 임대중인 세대수/ 총 월세비 코드(미구현) -->
+      <ion-card-title class="rentInfo">
+        임대중인 세대수/ 총 월세비
+      </ion-card-title>
+
+      <!-- 월세 납부현황 코드(미구현) -->
+      <ion-card-subtitle class="rentCheck">
+        00세대 중 00세대 완납
+      </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
+  <!-- 버튼 리스트 -->
   <ion-list class="mainMenu">
+    <!-- 입금 및 수납현황, 계약정보 관리 버튼(pay)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
       expand="block"
       (click)="gotoPay()"
-      >입금 및 수납현황 <br />세입자 관리</ion-button
+      >입금 및 수납현황 <br />계약정보 관리</ion-button
     >
+
+    <!-- 연장 및 퇴거 알림 버튼(control)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -32,6 +45,8 @@
       (click)="gotoControl()"
       >연장 및 퇴거 알림</ion-button
     >
+
+    <!-- 민원 확인 버튼(owneropinion)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -39,6 +54,8 @@
       (click)="gotoOwnerOpinion()"
       >민원 확인</ion-button
     >
+
+    <!-- 주택수리요청 버튼(repair)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -46,6 +63,8 @@
       (click)="gotoRepair()"
       >주택수리요청</ion-button
     >
+
+    <!-- 질문사항 버튼(faq)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -53,6 +72,8 @@
       (click)="gotoFaq()"
       >질문사항</ion-button
     >
+
+    <!-- 공지사항 버튼(notice)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"

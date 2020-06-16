@@ -1,9 +1,11 @@
+//페이지 머리말 CSS
 .header {
   display: flex;
   justify-content: center;
   margin-top: 5px;
 }
 
+//카드 CSS
 .date,
 .contract,
 .move {
@@ -12,18 +14,15 @@
   margin: 5px;
 }
 
-.button {
-  margin-top: 5px;
-  font-size: 20px;
-}
-
+// 폼 정리 CSS
 .form1,
 .form2 {
   display: flex;
   justify-content: center;
 }
 
-.buttons {
+// 버튼 CSS
+.button {
   height: 70px;
   font-size: 20px;
   margin: 10px 10px;

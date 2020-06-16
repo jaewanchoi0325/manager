@@ -1,24 +1,29 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h2 class="title">
-      로그인-임대인
-    </h2>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>로그인-임대인</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list class="loginFormBtn">
+  <!-- 로그인 폼 리스트 -->
+  <ion-list class="loginForm_Btn">
+    <!-- 아이디 입력 폼 -->
     <ion-item class="id">
       <ion-label color="primary" position="floating">ID</ion-label>
       <ion-input [(ngModel)]="id"></ion-input>
     </ion-item>
+    <!-- 바밀번호 입력 폼 -->
     <ion-item class="password">
       <ion-label color="primary" position="floating">Password</ion-label>
       <ion-input [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
   </ion-list>
 
-  <ion-list class="registerBtn">
+  <!-- 버튼 리스트 -->
+  <ion-list class="main_Btn">
+    <!-- 로그인 버튼 (로그인 성공시 임대인 메뉴(main1)로 이동
+      실패시 알람 뜸) -->
     <ion-button
       expand="block"
       color="secondary"
@@ -27,6 +32,7 @@
     >
       로그인
     </ion-button>
+    <!-- 회원가입 버튼 (회원가입 메뉴(signup1)로 이동) -->
     <ion-button
       expand="block"
       color="secondary"

@@ -1,25 +1,34 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      임차인
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>임차인</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- 현재 요일 기준 월세비 및 관리비 고지서, 청구금액 확인창(카드)  -->
   <ion-card class="information">
     <ion-card-header>
-      <ion-card-title class="date">0000년 00월 00일</ion-card-title>
-      <ion-card-title class="rentInfoAndDocument"
-        >월세 및 관리비 고지서</ion-card-title
-      >
-      <ion-card-subtitle class="rentMoney"
-        >월 청구금액 000,000원</ion-card-subtitle
-      >
+      <!-- 현재요일 코드 ( 멤버변수 {{todayDate}} )-->
+      <ion-card-title class="date">
+        {{todayDate}}
+      </ion-card-title>
+
+      <!-- 월세 및 관리비 고지서 코드 (미구현) -->
+      <ion-card-title class="rentInfoAndDocument">
+        월세 및 관리비 고지서
+      </ion-card-title>
+
+      <!-- 월세금액 및 납부현황 코드(미구현) -->
+      <ion-card-subtitle class="rentMoney">
+        월 청구금액 000,000원
+      </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
+  <!-- 버튼 리스트 -->
   <ion-list class="mainMenu">
+    <!-- 관리비 및 월세조회 및 납부 버튼(price)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -27,6 +36,8 @@
       (click)="gotoPrice()"
       >관리비 및 월세조회 <br />/ 납부</ion-button
     >
+
+    <!-- 임대계약 정보조회 및 연장 퇴거 요청 버튼(contract)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -34,6 +45,8 @@
       (click)="gotoContract()"
       >임대계약 정보조회<br />/ 연장 및 퇴거 요청</ion-button
     >
+
+    <!-- 민원 내역 및 작성 버튼(renteropinion)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -41,6 +54,8 @@
       (click)="gotoRenteropinion()"
       >민원 내역 및 작성</ion-button
     >
+
+    <!-- 대형폐기물처리 신청하기 버튼(trash)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -48,6 +63,8 @@
       (click)="gotoTrash()"
       >대형폐기물처리 신청하기</ion-button
     >
+
+    <!-- 택배함 조회 버튼(delivery)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -55,6 +72,8 @@
       (click)="gotoDelivery()"
       >택배함 조회</ion-button
     >
+
+    <!-- 주차서비스 버튼(parking)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -62,6 +81,8 @@
       (click)="gotoParking()"
       >주차서비스</ion-button
     >
+
+    <!-- 벼룩시장 버튼(market)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -69,6 +90,8 @@
       (click)="gotoMarket()"
       >벼룩시장</ion-button
     >
+
+    <!-- 질문사항 버튼(faq)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -76,6 +99,8 @@
       (click)="gotoFaq()"
       >질문사항</ion-button
     >
+
+    <!-- 공지사항 버튼(notice)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"

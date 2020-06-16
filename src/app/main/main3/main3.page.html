@@ -1,21 +1,23 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      관리자
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>관리자</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- 현재 요일 기준 계약 건수 및 민원사창 건수 확인창(카드) -->
   <ion-card class="information">
     <ion-card-header>
-      <ion-card-title class="date">0000년 00월 00일</ion-card-title>
+      <ion-card-title class="date">{{todayDate}}</ion-card-title>
       <ion-card-title class="situation">전체 -건 공실 -건</ion-card-title>
       <ion-card-subtitle class="opinion">민원사항 --건</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
+  <!-- 버튼 리스트 -->
   <ion-list class="mainMenu">
+    <!-- 관리건물 상세내역(managerbuilding)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -23,6 +25,8 @@
       (click)="gotoManagerbuilding()"
       >관리건물 상세내역</ion-button
     >
+
+    <!-- 민원내역 버튼(opinion)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -30,6 +34,8 @@
       (click)="gotoOpinion()"
       >민원내역</ion-button
     >
+
+    <!-- 대형폐기물 처리 내역 버튼(trashchecklist)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -37,6 +43,8 @@
       (click)="gotoTrashchecklist()"
       >대형폐기물 처리 내역</ion-button
     >
+
+    <!-- 수리견적서 작성 버튼(estimate)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -44,6 +52,8 @@
       (click)="gotoEstimate()"
       >수리견적서 작성</ion-button
     >
+
+    <!-- 점검표 작성하기 버튼(checklist)으로 이동 -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -51,6 +61,8 @@
       (click)="gotoChecklist()"
       >점검표 작성하기</ion-button
     >
+
+    <!-- 질문사항 버튼(faq)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"
@@ -58,6 +70,8 @@
       (click)="gotoFaq()"
       >질문사항</ion-button
     >
+
+    <!-- 공지사항 버튼(notice)으로 이동) -->
     <ion-button
       class="main_Btn"
       color="tertiary"
