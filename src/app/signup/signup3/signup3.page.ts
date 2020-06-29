@@ -19,7 +19,7 @@ export class Signup3Page {
   ) {}
 
   // 회원가입을 누르면 알람 창이 뜨게하는 알람 코드
-  async gotoSignUp3Alert() {
+  async gotoSignup3Alert() {
     var alert = await this.alertController.create({
       header: "가입완료",
       message: "가입이 완료되었습니다.",

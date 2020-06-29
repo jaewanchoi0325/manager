@@ -1,0 +1,55 @@
+<!-- 페이지 머리말 -->
+<ion-header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>임대인 관리하기</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="main-view">
+  <div class="mainBox">
+    <div class="addrsearchBox">
+      <ion-searchbar
+        ([ngModel])="addrsearchModel.addr"
+        class="searchbar"
+        placeholder="예) 판교역로 235, 분당주공, 삼평동 681"
+        #searchText(keyup.enter)="addrsearch(searchText.value)"
+      >
+      </ion-searchbar>
+
+      <ion-list>
+        <ion-item
+          *ngFor="let ret of retList;let i=index"
+          (click)="setparentAddr(ret.zipNo, ret.roadAddr)"
+        >
+          <div class="addrBox">
+            <div class="zipcode">{{ret.zipNo}}</div>
+            <div class="roadBox">
+              <p class="roadTitledo">도로명</p>
+              <div class="roadaddr">{{ret.roadAddr}}</div>
+            </div>
+            <div class="roadBox">
+              <p class="roadTitleji">지 번</p>
+              <div class="roadaddr">{{ret.jibunAddr}}</div>
+            </div>
+          </div>
+
+          <div class="roadBox">
+            <p class="roadTitledo">지역</p>
+            <div class="roadaddr">{{ret.siNm}}</div>
+          </div>
+        </ion-item>
+
+        <ion-infinite-scroll
+          (ionInfinite)="doInfinite($event)"
+          threshold="100px"
+        >
+          <ion-infinite-scroll-content
+            loadingSpinner="bubbles"
+            loadingTexxt="Loading more data..."
+          >
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

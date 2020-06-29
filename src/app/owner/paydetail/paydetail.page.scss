@@ -1,9 +1,4 @@
-.tutorial {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
-
+// 계약정보 머리말 CSS
 .ownerInfo {
   display: flex;
   justify-content: center;
@@ -11,10 +6,14 @@
   margin-bottom: 20px;
 }
 
-.mainList,
-.form1,
-.form2,
+// 카드 CSS
 .information {
+  display: flex;
+  justify-content: center;
+}
+
+// 리스트 폼 CSS
+.form {
   display: flex;
   justify-content: center;
 }

@@ -1,50 +1,58 @@
 <!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      연장 및 퇴거 알림
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>
+      연장 및 퇴거알림
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <!-- 현재요일 기준 계약연장 및 퇴거요청 합산 확인창(카드) -->
-  <ion-card>
-    <ion-card-title class="date">
-      {{todayDate}}
-    </ion-card-title>
-    <ion-card-title class="contract">
-      계약연장 : 00건
-    </ion-card-title>
-    <ion-card-title class="move">
-      퇴거요청 : 00건
-    </ion-card-title>
+  <ion-card class="information">
+    <ion-card-header>
+      <!-- 현재 요일 -->
+      <ion-card-title>
+        {{todayDate}}
+      </ion-card-title>
+
+      <!-- 연장요청 수 -->
+      <ion-card-title>
+        계약연장 : 00건
+      </ion-card-title>
+
+      <!-- 퇴거요청 수 -->
+      <ion-card-title>
+        퇴거요청 : 00건
+      </ion-card-title>
+    </ion-card-header>
   </ion-card>
+
   <!-- 계약연장 및 퇴거요청 기록 리스트 -->
   <ion-list class="mainMenu">
     <ion-item lines="inset">
-      <ion-col class="form1">
+      <ion-col class="form">
         날짜
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         제목
       </ion-col>
     </ion-item>
 
     <ion-item lines="inset">
-      <ion-col class="form1">
+      <ion-col class="form">
         00월 00일
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         계약 연장 신청
       </ion-col>
     </ion-item>
 
     <ion-item lines="inset">
-      <ion-col class="form1">
+      <ion-col class="form">
         00월 00일
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         퇴거 요청
       </ion-col>
     </ion-item>

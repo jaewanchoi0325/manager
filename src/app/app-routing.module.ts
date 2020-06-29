@@ -451,12 +451,32 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'checklistfixa',
-    loadChildren: () => import('./admin/checklistfixa/checklistfixa.module').then( m => m.ChecklistfixaPageModule)
+    path: "checklistfixa",
+    loadChildren: () =>
+      import("./admin/checklistfixa/checklistfixa.module").then(
+        (m) => m.ChecklistfixaPageModule
+      ),
   },
   {
-    path: 'checklistfixb',
-    loadChildren: () => import('./admin/checklistfixb/checklistfixb.module').then( m => m.ChecklistfixbPageModule)
+    path: "checklistfixb",
+    loadChildren: () =>
+      import("./admin/checklistfixb/checklistfixb.module").then(
+        (m) => m.ChecklistfixbPageModule
+      ),
+  },
+  {
+    path: "registerowner",
+    loadChildren: () =>
+      import("./admin/registerowner/registerowner.module").then(
+        (m) => m.RegisterownerPageModule
+      ),
+  },
+  {
+    path: "adminowner",
+    loadChildren: () =>
+      import("./admin/adminowner/adminowner.module").then(
+        (m) => m.AdminownerPageModule
+      ),
   },
 ];
 

@@ -1,27 +1,31 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      계약 연장하기
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>
+      계약연장 신청하기
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item lines="inset">
-    <ion-col class="form1">
-      날짜
-    </ion-col>
-    <ion-col class="form2">
-      제목
-    </ion-col>
-  </ion-item>
+  <!-- 계약연장 신청 리스트 -->
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-col class="form">
+        신청날짜
+      </ion-col>
+      <ion-col class="form">
+        제목
+      </ion-col>
+    </ion-item>
 
-  <ion-item lines="inset" (click)="gotoControlExtendDetail()">
-    <ion-col class="form1">
-      00월 00일
-    </ion-col>
-    <ion-col class="form2">
-      계약 연장 신청
-    </ion-col>
-  </ion-item>
+    <ion-item lines="inset" (click)="gotoControlExtendDetail()">
+      <ion-col class="form">
+        00월 00일
+      </ion-col>
+      <ion-col class="form">
+        계약연장 신청
+      </ion-col>
+    </ion-item>
+  </ion-list>
 </ion-content>

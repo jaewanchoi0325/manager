@@ -1,22 +1,11 @@
-//페이지 머리말 CSS
-.header {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
-
 //카드 CSS
-.date,
-.contract,
-.move {
+.information {
   display: flex;
   justify-content: center;
-  margin: 5px;
 }
 
 // 폼 정리 CSS
-.form1,
-.form2 {
+.form {
   display: flex;
   justify-content: center;
 }

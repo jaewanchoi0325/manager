@@ -3,85 +3,99 @@
   <ion-toolbar class="pagehead" mode="ios">
     <ion-title>
       입금 및 수납현황<br />
-      계약정보 관리
+      계약정보 보기
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- 주소, 월세비 및 납부현황 확인창(카드) -->
 <ion-content>
   <ion-card class="information">
     <ion-card-header>
+      <!-- 세입자 주소 -->
       <ion-card-title class="days">
         서울시 중랑구 겸재로 <br />
-        aa빌라 101동 101호
+        OO빌라 101동 101호
       </ion-card-title>
+
+      <!-- 월세비 및 납부현황 -->
       <ion-card-title class="rentInfo">
         000,000원 완납
       </ion-card-title>
+
+      <!-- 납부일 -->
       <ion-card-subtitle class="rentCheck">
         납부일: 매월 00일
       </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
 
+  <!-- 계약정보 리스트 -->
   <ion-list class="mainMenu">
+    <!-- 계약정보 머리말 -->
     <ion-item lines="inset">
       <ion-col class="ownerInfo">
-        세입자 정보
+        계약정보
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset" class="mainList">
-      <ion-col class="form1">
-        이름
+    <!-- 세입자 이름 -->
+    <ion-item lines="inset">
+      <ion-col class="form">
+        세입자 이름
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         임차인
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset" class="mainList">
-      <ion-col class="form1">
-        연락처
+    <!-- 세입자 연락처 -->
+    <ion-item lines="inset">
+      <ion-col class="form">
+        세입자 연락처
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         010-1111-1111
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset" class="mainList">
-      <ion-col class="form1">
+    <!-- 계약기간 -->
+    <ion-item lines="inset">
+      <ion-col class="form">
         계약기간
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         0000년 00월 00일 ~<br />
         0000년 00월 00일
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset" class="mainList">
-      <ion-col class="form1">
+    <!-- 보증금 -->
+    <ion-item lines="inset">
+      <ion-col class="form">
         보증금
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         00,000,000원
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset" class="mainList">
-      <ion-col class="form1">
+    <!-- 월세 -->
+    <ion-item lines="inset">
+      <ion-col class="form">
         월세
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         000,000원
       </ion-col>
     </ion-item>
 
-    <ion-item lines="inset" class="mainList">
-      <ion-col class="form1">
+    <!-- 납부 여부 -->
+    <ion-item lines="inset">
+      <ion-col class="form">
         납부 여부
       </ion-col>
-      <ion-col class="form2">
+      <ion-col class="form">
         완납
       </ion-col>
     </ion-item>
