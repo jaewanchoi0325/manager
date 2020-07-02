@@ -3,6 +3,7 @@ import { AddressService } from "src/app/services/address.service";
 
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { NavController } from "@ionic/angular";
 
 @Injectable()
 export class ProductProvider {
@@ -34,7 +35,7 @@ export class AdminownerPage {
     return this.retList;
   }
 
-  async addrsearch(searchText: string) {
+  async adminowner(searchText: string) {
     await this.service.addsearch(searchText, this.page, 10).then((res: any) => {
       console.log(res);
 

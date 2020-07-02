@@ -9,10 +9,11 @@
   <div class="mainBox">
     <div class="addrsearchBox">
       <ion-searchbar
-        ([ngModel])="addrsearchModel.addr"
+        ([ngModel])="adminownerModel.addr"
         class="searchbar"
         placeholder="예) 판교역로 235, 분당주공, 삼평동 681"
-        #searchText(keyup.enter)="addrsearch(searchText.value)"
+        #searchText
+        (keyup.enter)="adminowner(searchText.value)"
       >
       </ion-searchbar>
 

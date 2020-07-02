@@ -5,6 +5,9 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
   providedIn: "root",
 })
 export class AddressService {
+  adminowner(searchText: string, page: number, arg2: number) {
+    throw new Error("Method not implemented.");
+  }
   url: string = "http://www.juso.go.kr";
 
   constructor(private client: HttpClient) {}
