@@ -478,6 +478,11 @@ const routes: Routes = [
         (m) => m.AdminownerPageModule
       ),
   },
+  {
+    path: "address",
+    loadChildren: () =>
+      import("./admin/address/address.module").then((m) => m.AddressPageModule),
+  },
 ];
 
 @NgModule({

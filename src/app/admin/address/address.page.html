@@ -1,0 +1,59 @@
+<!-- 페이지 머리말 -->
+<ion-header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-title>주소 검색하기</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="main-view" [fullscreen]="true">
+  <ion-list class="mainBox">
+    <ion-list class="addsearchBox">
+      <ion-searchbar
+        class="searchbar"
+        placeholder="예) 판교역로 235, 분당주공, 삼평동 681 "
+        #searchText
+        (keyup.enter)="addrsearch(searchText.value)"
+      >
+      </ion-searchbar>
+      <ion-list>
+        <ion-list *ngFor="let ret of retList;let i=index">
+          <ion-item (click)="gotoOutput(ret)">
+            <ion-grid>
+              <ion-row class="roadBox">
+                <ion-col class="zipcode">
+                  우편번호: {{ret.zipNo}}
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="roadBox">
+                <ion-col class="roadTitledo">
+                  지역: {{ret.siNm}}
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="roadBox">
+                <ion-col class="roadTitledo">
+                  도로명주소: {{ret.roadAddr}}
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="roadBox">
+                <ion-col class="roadTitleji">
+                  지번주소: {{ret.jibunAddr}}
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll>
+          <ion-infinite-scroll-content
+            loadingSpinner="bubbles"
+            loadingText="잠시만 기다려 주세요..."
+          >
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </ion-list>
+    </ion-list>
+  </ion-list>
+</ion-content>

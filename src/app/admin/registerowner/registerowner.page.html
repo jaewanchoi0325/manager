@@ -16,27 +16,47 @@
       <ion-label position="floating">임대인 전화번호</ion-label>
       <ion-input></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label position="floating">임대인 소유 주소 등록</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>임대인 소유 주소 등록</ion-label>
+            <ion-button class="main_Btn" size="medium" (click)="gotoAddress()">
+              주소 검색하기
+            </ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="inset">
+            <ion-label>
+              {{ dataReceived.zipCode }} {{ dataReceived.address }}</ion-label
+            >
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="inset">
+            <ion-input placeholder="상세주소를 입력해주세요"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
     <!-- 초대코드 생성 출력 창 -->
+    <!-- 초대코드 생성하기 버튼 (클릭시 초대코드 생성 출력 창에 초대코드 뜸)-->
     <ion-item>
       <ion-label>
         {{inviteCode1}}{{inviteCode2}}{{inviteCode3}}{{inviteCode4}}{{inviteCode5}}{{inviteCode6}}{{inviteCode7}}{{inviteCode8}}
       </ion-label>
+      <ion-button color="primary" size="medium" (click)="getRandomnumber()">
+        초대코드 생성하기
+      </ion-button>
     </ion-item>
-
-    <!-- 초대코드 생성하기 버튼 (클릭시 초대코드 생성 출력 창에 초대코드 뜸)-->
-    <ion-button
-      expand="block"
-      color="primary"
-      size="large"
-      (click)="getRandomnumber()"
-    >
-      초대코드 생성하기
-    </ion-button>
   </ion-list>
 
   <!-- 초대코드 보내기 알람 버튼 (클릭시 알람창 뜨고 전화번호로 초대코드 전송(미구현)-->

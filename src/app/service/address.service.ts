@@ -5,21 +5,17 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
   providedIn: "root",
 })
 export class AddressService {
-  adminowner(searchText: string, page: number, arg2: number) {
-    throw new Error("Method not implemented.");
-  }
   url: string = "http://www.juso.go.kr";
 
   constructor(private client: HttpClient) {}
 
-  async addsearch(addr: string, curPage: number, countPerPage: number) {
+  async addrsearch(addr: string, curPage: number, countPerPage: number) {
     let keyword = "keyword=" + addr;
-    let confmKey = "confmKey=" + "U01TX0FVVEgyMDIwMDYyNTE2MzY0OTEwOTkwNDc=";
+    let confmKey = "confmKey=" + "devU01TX0FVVEgyMDIwMDYyOTE4MTY0NjEwOTkxMjE=";
     let currentPage = "curPage=" + curPage;
     let cpp = "countPerPage=" + countPerPage;
     let type = "resultType=json";
-
-    let path = "/addrlink/addrLinkapi.do?";
+    let path = "/addrlink/addrLinkApi.do?";
     let url =
       this.url +
       path +

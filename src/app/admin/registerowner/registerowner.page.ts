@@ -1,14 +1,15 @@
 // 기본 임포트 설정
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 // 네비게이션 기능 , 알람창 기능 추가 임포트
 import { AlertController, NavController } from "@ionic/angular";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: "app-registerowner",
   templateUrl: "./registerowner.page.html",
   styleUrls: ["./registerowner.page.scss"],
 })
-export class RegisterownerPage {
+export class RegisterownerPage implements OnInit {
   // inviteCode1부터 8까지 초대코드 변수
   inviteCode1;
   inviteCode2;
@@ -18,14 +19,30 @@ export class RegisterownerPage {
   inviteCode6;
   inviteCode7;
   inviteCode8;
+
+  dataReceived: any;
+
   constructor(
     // public alertController: AlertController 는 알람 창을 띄워지는 코드
     // 입력시 알람컨트롤러 임포트가 자동으로 생성됨
     // public navCtrl: NavController 는 네비게이션 기능을 추가하는 코드
     // 입력시 네비게이션 컴포넌트가 자동으로 생성됨
     public alertController: AlertController,
-    public navCtrl: NavController
-  ) {}
+    public navCtrl: NavController,
+    public activatedRoute: ActivatedRoute,
+    public router: Router
+  ) {
+    this.activatedRoute.queryParams.subscribe((params) => {
+      if (params && params.special) {
+        this.dataReceived = JSON.parse(params.special);
+      }
+    });
+    // this.activatedRoute.queryParams.subscribe((data) => {
+    //   this.dataReceived = JSON.stringify(data);
+    // });
+  }
+
+  ngOnInit() {}
 
   //숫자 0부터 9까지 무작위로 받는 함수
   getRandomnumber() {
@@ -109,6 +126,10 @@ export class RegisterownerPage {
     this.inviteCode6 = ``;
     this.inviteCode7 = ``;
     this.inviteCode8 = ``;
+  }
+
+  gotoAddress() {
+    this.navCtrl.navigateForward("address");
   }
 
   // this.inviteCode2 = `${
