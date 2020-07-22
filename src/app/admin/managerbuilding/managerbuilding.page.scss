@@ -1,7 +1,7 @@
-.header {
+// 머리말 높이 CSS (뒤로가기 버튼 있을때만 사용)
+.pagehead {
+  height: 44px;
   display: flex;
-  justify-content: center;
-  margin-top: 5px;
 }
 
 .main_Btn {

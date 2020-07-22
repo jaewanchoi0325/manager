@@ -74,6 +74,8 @@ export class AddressPage {
               },
             };
             this.router.navigate(["registerowner"], navigationExtras);
+            this.zipCode = ``;
+            this.address = ``;
             // this.router.navigate(["registerowner"], {
             //   queryParams: { 우편번호: this.zipCode, 주소: this.address },
             // });

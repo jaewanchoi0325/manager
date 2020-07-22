@@ -10,6 +10,7 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { PortService } from "src/app/service/port.service";
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { FormsModule } from "@angular/forms";
     HttpClientModule,
     StatusBar,
     SplashScreen,
+    PortService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent],

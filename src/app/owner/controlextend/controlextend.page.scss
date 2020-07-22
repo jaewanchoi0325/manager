@@ -1,3 +1,8 @@
+// 머리말 높이 CSS (뒤로가기 버튼 있을때만 사용)
+.pagehead {
+  height: 44px;
+  display: flex;
+}
 // 폼 설정 CSS
 .form {
   display: flex;

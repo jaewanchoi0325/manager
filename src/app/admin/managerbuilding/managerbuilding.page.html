@@ -1,47 +1,85 @@
+<!-- 페이지 머리말 -->
 <ion-header>
-  <header class="header">
-    <h1 class="title">
-      관리건물 상세내역
-    </h1>
-  </header>
+  <ion-toolbar class="pagehead" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/main3"> </ion-back-button>
+    </ion-buttons>
+    <ion-title>관리건물 상세내역</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list class="main_Btn">
-    <ion-button
-      expand="block"
-      size="large"
-      (click)="managerbuildingActionSheet()"
-      >건물 확인하기</ion-button
-    >
+    <ion-item>
+      <ion-label>시,도를 선택해주세요</ion-label>
+      <ionic-selectable
+        #countryComponent
+        [(ngModel)]="country"
+        itemValueField="id"
+        itemTextField="name"
+        [items]="countries"
+        [canSearch]="true"
+        (onChange)="countryChange($event)"
+        [canClear]="true"
+      >
+        <ng-template
+          ionicSelectableCloseButtonTemplate
+          placeholder="시,도를 선택해주세요."
+        >
+          이전 페이지
+        </ng-template>
+      </ionic-selectable>
+    </ion-item>
+    <ion-item>
+      <ion-label>시,군,구를 선택해주세요</ion-label>
+      <ionic-selectable
+        [(ngModel)]="port"
+        itemValueField="id"
+        itemTextField="name"
+        [items]="ports"
+        [isEnabled]="countryComponent.value"
+        [placeholder]="countryComponent.value ? '' : '상위조건를 먼저 선택해주세요'"
+      >
+        <ng-template ionicSelectableCloseButtonTemplate>
+          이전 페이지
+        </ng-template>
+      </ionic-selectable>
+    </ion-item>
+
+    <ion-searchbar class="searchBar" placeholder="상세주소를 입력해주세요.">
+    </ion-searchbar>
+
+    <!-- <ion-button expand="block" size="large" (click)="showBasicPicker()">
+      지역 선택하기
+    </ion-button> -->
   </ion-list>
 
   <ion-list class="mainMenu">
     <ion-item>
       <ion-label (click)="gotoManagerbuildingdetail()">
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 중랑구 겸재로.....</h3>
+        <h2>건물명: ㅇㅇ건물</h2>
+        <h3>주소: 서울특별시 중랑구 겸재로.....</h3>
       </ion-label>
     </ion-item>
 
     <ion-item>
       <ion-label>
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 강동구 성내로.....</h3>
+        <h2>건물명: ㅇㅇ건물</h2>
+        <h3>주소: 서울특별시 강동구 성내로.....</h3>
       </ion-label>
     </ion-item>
 
     <ion-item>
       <ion-label>
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 마포구 성암로.....</h3>
+        <h2>건물명: ㅇㅇ건물</h2>
+        <h3>주소: 서울특별시 종로구 경희궁1가.....</h3>
       </ion-label>
     </ion-item>
 
     <ion-item>
       <ion-label>
-        <h2>건물명:ㅇㅇ건물</h2>
-        <h3>주소:서울시 중구 을지로.....</h3>
+        <h2>건물명: ㅇㅇ건물</h2>
+        <h3>주소: 인천광역시 연수구 국제로.....</h3>
       </ion-label>
     </ion-item>
   </ion-list>

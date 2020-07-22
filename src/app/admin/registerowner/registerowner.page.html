@@ -1,6 +1,9 @@
 <!-- 페이지 머리말 -->
 <ion-header>
   <ion-toolbar class="pagehead" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/main3"> </ion-back-button>
+    </ion-buttons>
     <ion-title>임대인 등록하기</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -29,7 +32,7 @@
       </ion-row>
 
       <ion-row>
-        <ion-col>
+        <ion-col *ngIf="dataReceived">
           <ion-item lines="inset">
             <ion-label>
               {{ dataReceived.zipCode }} {{ dataReceived.address }}
